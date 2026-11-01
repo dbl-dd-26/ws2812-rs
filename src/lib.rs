@@ -421,19 +421,19 @@ impl<SPI: SpiBus> WS2812SPI<SPI> {
 
 impl<SPI: SpiBus> TransferTiming for WS2812SPI<SPI> {
     fn t0h() -> u32 {
-        400
+        325
     }
     fn t1h() -> u32 {
         800
     }
     fn t0l() -> u32 {
-        850
+        800
     }
     fn t1l() -> u32 {
-        450
+        800
     }
     fn reset() -> u32 {
-        50_000
+        280_000
     }
 }
 
